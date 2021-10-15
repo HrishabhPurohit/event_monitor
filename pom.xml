@@ -14,6 +14,9 @@
 	<name>Event Monitor</name>
 	<description>Utility for Oracle</description>
 
+	<properties>
+		<maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
+	</properties>
 	<modules>
 		<module>event_monitor-api_gateway</module>
 		<module>event_monitor-ms_outlook_scraper</module>
@@ -21,15 +24,6 @@
 		<module>event_monitor-ms_calendar_scraper</module>
 		<module>event_monitor-storage_service</module>
 	</modules>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-data-jpa</artifactId>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
